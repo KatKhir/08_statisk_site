@@ -1,7 +1,7 @@
 /*************** Reset *********************/
 * {
   margin: 0rem;
-  padding: 0.4rem;
+  padding: 0rem;
   box-sizing: border-box;
 }
 
@@ -17,17 +17,36 @@ main {
   max-width: 1000px;
   margin: 0 auto;
 }
-/************************** Categories grid ***********************/
+/************************** Grid ***********************/
+/******** section ******/
 .category_list_container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
 }
 
-/********* button ********/
+.product_list_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+/******** article *******/
+article {
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 4;
+}
+
+/********* button & a tag ********/
 button {
   padding: 20px 40px;
   font-size: larger;
   font-weight: 600;
   background-color: darkorange;
+}
+
+a {
+  text-decoration: underline;
+  color: black;
 }
