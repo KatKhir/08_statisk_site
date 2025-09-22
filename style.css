@@ -1,0 +1,33 @@
+/*************** Reset *********************/
+* {
+  margin: 0rem;
+  padding: 0.4rem;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/**************** main ***************/
+main {
+  padding: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+/************************** Categories grid ***********************/
+.category_list_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+/********* button ********/
+button {
+  padding: 20px 40px;
+  font-size: larger;
+  font-weight: 600;
+  background-color: darkorange;
+}
