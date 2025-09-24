@@ -4,11 +4,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Produkt</title>
 </head>
 
 <body>
+    <header>
+        <div>
+            <a href="index.html">
+                <img class="logo" src="img/logo.webp" alt="logo">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a class="li_a" href="index.html">Categories</a></li>
+                <li><a class="li_a" href="produktliste.html">Produktliste</a></li>
+                <li><a class="li_a" href="produkt.html">Produkt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="product">
+            <div class="produkt_billede">
+                <img src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp" alt="id 1163">
+            </div>
+            <div class="produkt_info">
+                <h2 class="h2_margin">Product Information</h2>
+                <br>
+                <p><strong>Model name:</strong> Ahara Team India Fanwear Round Neck Jersey</p>
+                <br>
+                <p><strong>Color:</strong> Blue</p>
+                <br>
+                <p><strong>Brand:</strong> Nike</p>
+                <br>
+                <br>
+                <label for="size" class="size_p">Choose a size</label>
+                <select name="size" id="size">
+                    <option value="XS">XS</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
 
+                <button class="add_to_basket">Add to basket</button>
+
+            </div>
+
+
+        </section>
+    </main>
+    <footer></footer>
 </body>
 
 </html>
