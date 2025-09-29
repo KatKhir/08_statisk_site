@@ -19,7 +19,7 @@ function showProducts(products) {
         </div>
         <h2>${product.productdisplayname}</h2> 
         <p>DKK ${product.price},-</p>
-        <a href="https://produkt.html">Read more</a>
+        <a href="produkt.html?id=${product.id}">Read more</a>
     </article>`;
   });
 }

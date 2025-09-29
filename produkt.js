@@ -1,6 +1,8 @@
 console.log("loaded...");
 
-const id = 1163;
+// const id = 1163;
+
+const id = new URLSearchParams(window.location.search).get("id");
 const produktUrl = `https://kea-alt-del.dk/t7/api/products/${id}`;
 const productcontainer = document.querySelector(".product");
 
@@ -38,6 +40,5 @@ function show(data) {
                 </select>
                 <button class="add_to_basket">Add to basket</button>
                   </div> 
-
   `;
 }
