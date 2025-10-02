@@ -35,7 +35,7 @@ function show(data) {
 <br>
 <br>
 <p ><strong>Description:</strong>
-<span>${data.description === "-" ? "Der er ingen description" : data.description}</span>
+<span>${data.description === "-" ? "No description at the moment..." : data.description}</span>
 </p>
 
                   </div> 
