@@ -29,16 +29,15 @@ function show(data) {
                 <p class="produkt_info"><strong>Brand: </strong>${data.brandname}</p>
                 <br>
                <p class="produkt_info"><strong>Price: </strong>DKK ${data.price},-</p>
+<br>    
+<button class="add_to_basket">Add to basket</button>
 <br>
-                <label for="size" class="size_p">Choose a size</label>
-                <select name="size" id="size">
-                    <option value="XS">XS</option>
-                    <option value="S">S</option>
-                    <option value="M">M</option>
-                    <option value="L">L</option>
-                    <option value="XL">XL</option>
-                </select>
-                <button class="add_to_basket">Add to basket</button>
+<br>
+<br>
+<p ><strong>Description:</strong>
+<span>${data.description === "-" ? "Der er ingen description" : data.description}</span>
+</p>
+
                   </div> 
   `;
 }
